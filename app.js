@@ -10,19 +10,6 @@ class Book {
 //UI Class: Handle UI Tasks
 class UI {
     static displayBooks() {
-        /*const StoredBooks = [
-            {
-                title: 'Book one',
-                author: 'John Doe',
-                isbn: '3434434'
-            },
-            {
-                title: 'Book two',
-                author: 'Jane Doe',
-                isbn: '45545'
-            }
-        ]
-        const books = StoredBooks;*/
         const books = Store.getBooks();
         books.forEach((book) => UI.addBookToList(book));
     }
